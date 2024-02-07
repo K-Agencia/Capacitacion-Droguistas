@@ -1,0 +1,1 @@
+export const RutaAPI = "https://administracion.crececoncolgate.col1.co/api";

@@ -1,0 +1,77 @@
+.NavBar {
+   height: 7em;
+   margin-bottom: 1em;
+   font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+
+.NavBar .container {
+   height: 100%;
+   /* padding: 0 15em; */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.NavBar .container .nav-imgLogo {
+   width: min-content;
+   height: 6em;
+   align-self: flex-start;
+}
+
+.NavBar .container .nav-imgLogo img {
+   height: 100%;
+}
+
+.NavBar .container .nav-navegacion {
+   width: 50%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.NavBar .container .nav-navegacion h1{
+   font-weight: 100;
+}
+
+
+@media only screen and (max-width: 1400px) {
+   .NavBar {
+      height: 4em;
+   }
+
+   .NavBar .container .nav-imgLogo {
+      height: 4em;
+   }
+
+   .NavBar .container .nav-navegacion {
+      width: 60%;
+   }
+
+   .NavBar .container .nav-navegacion a.navLink, .NavBar .container .nav-navegacion button.navLink {
+      font-size: 1em;
+   }
+}
+
+@media only screen and (max-width: 480px) {
+   .NavBar {
+      height: auto;
+   }
+
+   .NavBar .container {
+      height: 100%;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .NavBar .container .nav-imgLogo {
+      height: 4em;
+   }
+
+   .NavBar .container .nav-navegacion {
+      margin-right: 1em;
+      display: flex;
+      justify-content: flex-end;
+   }
+}

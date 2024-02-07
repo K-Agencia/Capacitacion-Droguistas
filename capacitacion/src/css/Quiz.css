@@ -1,0 +1,178 @@
+.Quiz {
+   width: 50%;
+   padding: 2em;
+   border-radius: 1em;
+   background: var(--color-gris);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: fixed;
+   top: 5vw;
+   left: 50vh;
+   z-index: 2000;
+}
+
+.Quiz h1 {
+   margin: 0;
+   text-align: center;
+   color: var(--color-colgate);
+}
+
+.Quiz h3 {
+   margin: 1em 0;
+   align-self: flex-start;
+   text-align: left;
+   /* color: var(--color-colgate); */
+}
+
+.Quiz p {
+   margin: 0 0 1em;
+   text-align: justify;
+   font-family: "Light";
+   font-size: 1.2em;
+}
+
+.Quiz .divOpciones{
+   width: 100%;
+}
+
+.Quiz .opcionesRespuestas {
+   width: 90%;
+   margin: 0 auto;
+}
+
+.Quiz Button.opciones {
+   width: 100%;
+   padding: 0.8em 1em;
+   margin: 0.5em 0;
+   font-family: "Light";
+   font-size: 1.3em;
+   border: 0px;
+   border-radius: 2em;
+   color: var(--color-gris-oscuro);
+   background: var(--color-gris-medio);
+}
+
+.Quiz Button.opciones:hover{
+   background: #595655;
+   color: #fff;
+   cursor: pointer;
+}
+
+.Quiz Button.opciones.correcto {
+   color: var(--color-gris-oscuro);
+   background: #b8dfd1;
+   cursor: default;
+}
+
+.Quiz Button.opciones.incorrectoSeleccionada {
+   color: var(--color-gris-oscuro);
+   background: #e8a7ab;
+   cursor: default;
+}
+
+.Quiz Button.opciones.incorrectoSinSeleccionar, .Quiz Button.opciones.incorrectoSinSeleccionar:hover {
+   opacity: 30%;
+   background: var(--color-gris-medio);
+   color: var(--color-gris-oscuro);
+   cursor: default;
+}
+
+.Quiz hr{
+   width: 80%;
+   border: 1px solid var(--color-gris-medio);
+}
+
+.Quiz Button.siguientePregunta{
+   padding: 0.8em 1em;
+   margin: 1em 0 0;
+   font-family: "Light";
+   font-size: 1em;
+   color: var(--color-gris-oscuro);
+   border: 1px solid var(--color-gris-oscuro);
+   border-radius: 2em;
+   background: var(--color-gris);
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.Quiz Button.siguientePregunta:hover{
+   background: var(--color-colgate);
+   border: 1px solid var(--color-colgate);
+   color: #fff;
+}
+
+.Quiz Button.siguientePregunta.disable{
+   opacity: 40%;
+}
+
+.Quiz Button.siguientePregunta.disable:hover{
+   color: var(--color-gris-oscuro);
+   border: 1px solid var(--color-gris-oscuro);
+   background: var(--color-gris);
+   cursor: default;
+}
+
+.resultadoFinal{
+   width: 100%;
+   height: 20rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.resultadoFinal .texto{
+   color: var(--color-gris-oscuro);
+   font-family: "LightItalic";
+}
+
+.resultadoFinal .respuestasCorrectas{
+   margin: 0 auto;
+   text-align: center;
+   font-size: 6em;
+   color: #7fff00;
+}
+
+.resultadoFinal .footer2{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+}
+
+.resultadoFinal .footer2 .botonesFooter{
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1400px) {
+   .Quiz {
+      width: 60%;
+      position: fixed;
+      top: 1vw;
+      left: 40vh;
+   }
+
+   .Quiz Button.opciones {
+      width: 100%;
+      padding: 0.5em 1em;
+      margin: 0.5em auto;
+   }
+}
+
+@media only screen and (max-width: 480px) {
+   .Quiz {
+      width: 80%;
+      position: fixed;
+      top: 1vw;
+      left: 1vh;
+  }
+
+  .Quiz Button.opciones {
+   font-size: 1em;
+}
+}

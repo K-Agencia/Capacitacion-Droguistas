@@ -1,0 +1,125 @@
+.NavBar {
+   height: 7em;
+   margin-bottom: 1em;
+   /* background: rgb(153, 51, 51); */
+   /* border-bottom: 2px solid #000; */
+}
+
+.NavBar .container {
+   height: 100%;
+   padding: 0 15em;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.NavBar .container .nav-imgLogo {
+   width: min-content;
+   height: 6em;
+   align-self: flex-start;
+}
+
+.NavBar .container .nav-imgLogo img {
+   height: 100%;
+}
+
+.NavBar .container .nav-navegacion {
+   width: 50%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.NavBar .container .nav-navegacion a.navLink, .NavBar .container .nav-navegacion button.navLink {
+   position: relative;
+   font-family: "Regular";
+   font-size: 1.3em;
+   text-align: center;
+   color: #595655;
+   text-decoration: none;
+   background: none;
+   border: 0;
+   cursor: pointer;
+}
+
+.NavBar .container .nav-navegacion a.navLink:hover, .NavBar .container .nav-navegacion button.navLink:hover {
+   font-weight: 900;
+   color: var(--color-colgate);
+}
+
+.NavBar .container .nav-navegacion a.navLink.activeLink {
+   color: var(--color-colgate);
+   font-weight: 900;
+   border-bottom: 2px solid var(--color-colgate);
+}
+
+.nav-navegacion.mobile{
+   display: none;
+}
+
+@media only screen and (max-width: 1400px) {
+   .NavBar {
+      height: 4em;
+   }
+
+   .NavBar .container .nav-imgLogo {
+      height: 4em;
+   }
+
+   .NavBar .container .nav-navegacion {
+      width: 60%;
+   }
+
+   .NavBar .container .nav-navegacion a.navLink, .NavBar .container .nav-navegacion button.navLink {
+      font-size: 1em;
+   }
+}
+
+@media only screen and (max-width: 480px) {
+   .NavBar {
+      height: auto;
+   }
+
+   .NavBar .container {
+      height: 100%;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .NavBar .container .nav-imgLogo {
+      height: 4em;
+   }
+
+   .NavBar .container .nav-navegacion {
+      margin-right: 1em;
+      display: flex;
+      justify-content: flex-end;
+   }
+
+   .NavBar .container .nav-navegacion a.navLink, .NavBar .container .nav-navegacion button.navLink {
+      display: none;
+   }
+
+   .NavBar .nav-navegacion.mobile {
+      height: 3em;
+      background: #fff;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+   }
+
+   .NavBar .nav-navegacion.mobile a.navLink {
+      text-decoration: none;
+      color: #595655;
+      font-family: "Regular";
+   }
+
+
+   .NavBar .nav-navegacion.mobile a.navLink:active {
+      font-family: "Bold";
+      color: var(--color-colgate);
+   }
+}

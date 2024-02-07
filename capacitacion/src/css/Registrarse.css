@@ -1,0 +1,360 @@
+.Registrarse {
+  width: 100%;
+  max-height: 100vh;
+  display: flex;
+  /* overflow: hidden; */
+}
+
+.imgPortada {
+  width: 50%;
+  position: fixed;
+  right: 0;
+}
+
+.imgPortada img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seccionForm {
+  width: 50%;
+  min-height: 100vh;
+  height: max-content;
+  background: var(--color-gris);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formRegistrarse {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccionForm .nav-imgLogo {
+  width: min-content;
+  height: 6em;
+  /* left: 15em; */
+}
+
+.seccionForm .nav-imgLogo img {
+  height: 100%;
+  position: relative;
+  top: 0;
+}
+
+.formRegistrarse h1 {
+  font-family: "BoldItalic";
+  font-size: 2.5em;
+  color: var(--color-colgate);
+  text-align: center;
+}
+
+.formRegistrarse .contentInputs {
+  margin-bottom: 1em;
+}
+
+.zonas_regiones {
+  width: 100%;
+  display: flex;
+}
+
+.formRegistrarse .zonas_regiones > * {
+  width: calc(100% / 3);
+}
+
+.formRegistrarse .selectDistribuidor {
+  padding: 0.5em;
+  margin: 0.5em 0 0.5em;
+  width: 100%;
+}
+
+.formRegistrarse form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formRegistrarse p {
+  margin: 0;
+  font-family: "Regular";
+  font-size: 1.2em;
+}
+
+.formRegistrarse .selectDistribuidor {
+  width: 100%;
+  padding: 0.3em 1em;
+  margin: 0.5em 0 0.5em;
+  font-family: "Light";
+  font-size: 1em;
+  color: var(--color-gris-oscuro);
+  border: 2px solid transparent;
+  border-radius: 2em;
+  align-self: flex-start;
+}
+
+.formRegistrarse option:disabled {
+  background: rgb(170, 170, 170);
+  font-weight: 500;
+  color: #fff;
+}
+
+.formRegistrarse input.inputCorreo {
+  width: 480px;
+  padding: 0.3em 1em;
+  margin: 0.5em 0 0.5em;
+  font-family: "Light";
+  font-size: 1em;
+  border: 2px solid transparent;
+  border-radius: 2em;
+}
+
+.contentInputs p span {
+  font-size: 0.8em;
+  color: #009ca6;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.formRegistrarse input.inputCorreo:focus,
+.formRegistrarse input.inputCorreo:active,
+.formRegistrarse .selectDistribuidor:focus,
+.formRegistrarse .selectDistribuidor:active {
+  border: 2px solid #d2010c4d;
+  outline: none;
+}
+
+.formRegistrarse button,
+.formRegistrarse a {
+  width: 70%;
+  padding: 0.3em 2em;
+  font-family: "Bold";
+  font-size: 1.5em;
+  border: 0px;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: 90ms;
+}
+
+.formRegistrarse button.buttonSubmit {
+  color: #fff;
+  background: var(--color-colgate);
+}
+
+.formRegistrarse button.buttonSubmit:hover {
+  transform: scale(1.05);
+  background: #f0000c;
+}
+
+.formRegistrarse .seccionLoginRegistro {
+  width: 100%;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formRegistrarse .seccionLoginRegistro p {
+  font-size: 1em;
+}
+
+.seccionLoginRegistro a.linkSeccion {
+  width: 30%;
+  margin-top: 1em;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-gris-oscuro);
+  border: 1px solid var(--color-gris-oscuro);
+}
+
+.seccionLoginRegistro a.linkSeccion:hover {
+  color: #fff;
+  background: #009ca6;
+  border: 1px solid #009ca6;
+  transform: scale(1.05);
+}
+
+.message_error {
+  margin-bottom: 1em;
+  color: #d2010d;
+}
+
+.formRegistrarse .formCampos {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1400px) {
+  .formRegistrarse {
+    margin-top: 2em;
+    padding: 1em;
+    width: 90%;
+    display: block;
+    /* flex-direction: column;
+      justify-content: center;
+      align-items: center; */
+  }
+
+  .imgPortada {
+    width: 40%;
+  }
+
+  .seccionForm {
+    width: 60%;
+  }
+
+  .formRegistrarse .formCampos {
+    width: 95%;
+  }
+
+  .seccionForm .nav-imgLogo {
+    height: 4em;
+  }
+
+  .formRegistrarse form {
+    width: 90%;
+  }
+
+  .formRegistrarse .contentInputs {
+    margin-bottom: 0.5em;
+    /* font-family: em; */
+  }
+
+  .formRegistrarse input.inputCorreo {
+    padding: 0.5em;
+    margin: 0.5em 0 0;
+  }
+
+  .formRegistrarse button,
+  .formRegistrarse a {
+    width: 70%;
+    margin-top: 1em;
+    padding: 0.3em 2em;
+    font-size: 1.2em;
+  }
+
+  .formRegistrarse .seccionLoginRegistro {
+    width: 100%;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* .formRegistrarse .selectsInputs .contentInputs:nth-child(1),
+   .formRegistrarse .selectsInputs .contentInputs:nth-child(2) {
+      margin-right: 2em;
+   } */
+
+  .formRegistrarse .selectsInputs .contentInputs:nth-child(3) {
+    width: 18em;
+  }
+
+  .formRegistrarse
+    .selectsInputs
+    .contentInputs:nth-child(3)
+    input.inputCorreo {
+    width: 15em;
+  }
+
+  .formRegistrarse p {
+    font-size: 1em;
+  }
+
+  .seccionLoginRegistro a.linkSeccion {
+    width: 30%;
+    margin-top: 0;
+    margin-left: 1em;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .imgPortada {
+    display: none;
+  }
+
+  
+  .Registrarse {
+    overflow: visible;
+  }
+
+  .seccionForm {
+    height: 100%;
+  }
+
+  .formRegistrarse {
+    margin-top: 3em;
+    padding-bottom: 3em;
+    display: block;
+  }
+
+  .zonas_regiones {
+    flex-direction: column;
+  }
+
+  .formRegistrarse .selectsInputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formRegistrarse .formCampos {
+    width: 100%;
+  }
+
+  .formRegistrarse form {
+    width: 100%;
+  }
+
+  .formRegistrarse .zonas_regiones > * {
+    width: 100%;
+  }
+
+  .formRegistrarse input.inputCorreo {
+    width: 90% !important;
+  }
+
+  .formRegistrarse .seccionLoginRegistro {
+    width: 100%;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formRegistrarse .selectDistribuidor {
+    width: 323.75px;
+  }
+
+  .formRegistrarse
+    .selectsInputs
+    .contentInputs:nth-child(3)
+    input.inputCorreo {
+    width: 300.75px !important;
+  }
+
+  .errorText {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+  }
+
+  .seccionLoginRegistro a.linkSeccion {
+    margin: 0;
+  }
+}

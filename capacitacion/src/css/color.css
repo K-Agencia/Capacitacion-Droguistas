@@ -1,0 +1,14 @@
+:root{
+   --color-colgate: #d2010d;
+   --color-gris: #f2f2f2;
+   --color-gris-medio: #d5d5d5;
+   --color-gris-oscuro: #595655;
+   --swiper-theme-color: #d2010d !important;
+   --swiper-navigation-size: 90px !important;
+}
+
+@media only screen and (max-width: 1400px) {
+   :root{
+      --swiper-navigation-size: 40px !important;
+   }
+}

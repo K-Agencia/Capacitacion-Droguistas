@@ -1,0 +1,30 @@
+.mui-datatables-zcmli0-MuiGrid-root {
+   align-items: flex-start;
+}
+
+.mui-datatables-11lq3yg-MuiGrid-root {
+   flex-direction: column;
+}
+
+.esCorrecto{
+   background: #edf7ed;
+   color: #1e4620;
+   text-align: center;
+   font-weight: 500;
+}
+
+.esIncorrecto{
+   background: #fdeded;
+   color: #5f2120;
+   text-align: center;
+   font-weight: 500;
+}
+
+.mui-datatables-11mde6h-MuiPaper-root {
+   box-shadow: 0px 0px 0px!important;
+}
+
+.mui-datatables-0 {
+   text-align: center;
+   margin-bottom: 2em;
+}

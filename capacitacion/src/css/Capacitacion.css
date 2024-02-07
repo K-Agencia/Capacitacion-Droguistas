@@ -1,0 +1,229 @@
+.Capacitacion .video {
+  background: var(--color-gris);
+}
+
+.Capacitacion h1.tituloVideo {
+  margin: 0;
+  padding: 0.6em 0 0;
+  font-family: "BoldItalic";
+  font-size: 3em;
+  color: var(--color-colgate);
+  text-align: center;
+}
+
+.Capacitacion .video-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.Capacitacion .video-responsive iframe,
+.Capacitacion .video-responsive object,
+.Capacitacion .video-responsive embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container-btn {
+  margin: 1em 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-btn button {
+  width: 100%;
+  padding: 0.3em 2em;
+  font-family: "Bold";
+  font-size: 1.5em;
+  border: 1px solid var(--color-colgate);
+  border-radius: 1em;
+  cursor: pointer;
+  transition: 90ms;
+  color: var(--color-colgate);
+  background: #ffffff;
+}
+
+.container-btn button.disable {
+  color: #dadada;
+  border: 1px solid #dadada;
+  background: #ffffff;
+  cursor: default;
+}
+
+.container-btn button.btn:hover {
+  transform: scale(1.05);
+  color: #ffffff;
+  background: var(--color-colgate);
+}
+
+.container-btn .link-btn {
+  width: 30%;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1400px) {
+  .informacion .material h3 {
+    font-size: 1.5em !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .Capacitacion h1.tituloVideo {
+    font-size: 2em;
+  }
+
+  .informacion h3.titulo {
+    font-size: 2em;
+  }
+
+  .informacion .descripcion {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .informacion .descripcion .texto {
+    width: 90% !important;
+    padding: 0 !important;
+    transition: 0.5s;
+    margin-bottom: 2em;
+  }
+
+  .informacion .descripcion .texto p {
+    width: 100%;
+    padding: 1em !important;
+    font-size: 1em !important;
+  }
+
+  .informacion .material {
+    width: 90% !important;
+  }
+
+  .container-btn {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .container-btn button {
+    width: 100%;
+    padding: 0.3em 2em;
+    font-family: "Bold";
+    font-size: 1em;
+    border: 1px solid var(--color-colgate);
+    border-radius: 1em;
+    cursor: pointer;
+    transition: 90ms;
+    color: var(--color-colgate);
+    background: #ffffff;
+  }
+
+  .container-btn .link-btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/* -------- DESCRIPCIÓN -------- */
+
+.informacion {
+  display: flex;
+}
+
+.informacion h3.titulo {
+  margin: 1em 0 0.63em;
+  font-family: "BoldItalic";
+  font-size: 2.4em;
+  text-align: center;
+}
+
+.informacion .descripcion {
+  width: 100%;
+   display: flex;
+}
+
+.informacion .descripcion .texto {
+  width: 100%;
+  padding: 0 1em;
+  transition: 0.5s;
+}
+
+.informacion .descripcion .texto p {
+  margin: 0;
+  padding: 2em;
+  font-family: "Light";
+  font-size: 1.2em;
+  text-align: justify;
+  background: var(--color-gris);
+  border-radius: 1em;
+}
+
+.informacion .descripcion .texto p button {
+  width: 100%;
+  margin-top: 1em;
+  border: 0px;
+  font-family: "LightItalic";
+  font-size: 1.2em;
+  color: var(--color-colgate);
+  cursor: pointer;
+  background: none;
+}
+
+.informacion .descripcion p button:hover {
+  font-weight: 900;
+}
+
+.informacion .material {
+  width: 20%;
+  height: fit-content;
+  padding: 0 1em 1em;
+  background: var(--color-gris);
+  border-radius: 1em;
+}
+
+.informacion .material h3 {
+  height: min-content;
+  font-size: 1.7em;
+  text-align: center;
+}
+
+.informacion .material .descargaMaterial {
+  display: flex;
+}
+
+.informacion .material .descargaMaterial:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.descargaMaterial img {
+  width: 23%;
+  height: 23%;
+  margin-right: 10px;
+}
+
+.descargaMaterial .textoMaterial h5 {
+  margin: 0;
+  font-family: "BoldItalic";
+  font-size: 1.4em;
+  color: var(--color-colgate);
+  display: flex;
+  align-items: center;
+}
+
+.descargaMaterial .textoMaterial .iconSvg {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+.descargaMaterial .textoMaterial p {
+  margin: 0;
+  font-family: "LightItalic";
+  font-weight: 600;
+}

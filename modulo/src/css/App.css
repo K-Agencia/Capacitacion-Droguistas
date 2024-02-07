@@ -1,0 +1,35 @@
+.App{
+   margin: 1em 4em 0;
+}
+
+.ButtonDownload{
+   text-align: right;
+}
+
+.mui-datatables-kk1bwy-MuiButtonBase-root-MuiMenuItem-root.Mui-selected, .mui-datatables-kk1bwy-MuiButtonBase-root-MuiMenuItem-root.Mui-selected:hover {
+   background-color: rgb(25 118 210);
+   color: #fff;
+   font-weight: 600;
+}
+
+.mui-datatables-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover {
+   background-color: rgb(92, 158, 224);
+   color: #fff;
+   font-weight: 600;
+}
+
+.mui-datatables-q8hpuo-MuiFormControl-root, .mui-datatables-17vbkzs-MuiFormControl-root-MuiTextField-root {
+   margin: 1em 0;
+}
+
+.marginInput{
+   margin-bottom: 1em ;
+}
+
+.marginInput2{
+   margin: 1em 0;
+}
+
+.swal2-title{
+   font-family: "Roboto","Helvetica","Arial",sans-serif;
+}

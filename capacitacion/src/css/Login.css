@@ -1,0 +1,163 @@
+.Login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.imgPortada {
+  width: 50%;
+}
+
+.imgPortada img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seccionForm {
+  width: 50%;
+  height: 100vh;
+  background: var(--color-gris);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formIniciarSesion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccionForm .nav-imgLogo {
+  width: min-content;
+  height: 6em;
+  position: absolute;
+  top: 0;
+  /* left: 15em; */
+}
+
+.seccionForm .nav-imgLogo img {
+  height: 100%;
+}
+
+.formIniciarSesion h1 {
+  font-family: "BoldItalic";
+  font-size: 2.5em;
+  color: var(--color-colgate);
+}
+
+.formIniciarSesion form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formIniciarSesion p {
+  margin: 0;
+  font-family: "Regular";
+  font-size: 1em;
+  text-align: left;
+}
+
+.formIniciarSesion input.inputCorreo {
+  width: 60%;
+  padding: 1em;
+  margin: 0.5em 0;
+  font-family: "Light";
+  font-size: 1em;
+  border: 2px solid transparent;
+  border-radius: 2em;
+}
+
+.formIniciarSesion input.inputCorreo:focus,
+.formIniciarSesion input.inputCorreo:active {
+  border: 2px solid #d2010c4d;
+  outline: none;
+}
+
+.formIniciarSesion button,
+.formIniciarSesion a {
+  width: 30%;
+  padding: 0.3em 2em;
+  font-family: "Bold";
+  font-size: 1.5em;
+  border: 0px;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: 90ms;
+}
+
+.formIniciarSesion button.buttonSubmit {
+  color: #fff;
+  background: var(--color-colgate);
+}
+
+.formIniciarSesion button.buttonSubmit:hover {
+  transform: scale(1.05);
+  background: #f0000c;
+}
+
+.formIniciarSesion .seccionLogin {
+  width: 60%;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formIniciarSesion .seccionLogin p {
+  font-size: 1em;
+}
+
+.seccionLogin a.linkSeccion {
+  width: 30%;
+  margin-top: 0.5em;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none;
+  background: #009ca6;
+  border: 1px solid #009ca6;
+}
+
+.seccionLogin a.linkSeccion:hover {
+  background: #00cbda;
+  border: 1px solid #00cbda;
+  transform: scale(1.05);
+}
+
+.message_error {
+  margin-bottom: 1em;
+  color: #d2010d;
+}
+
+.Login hr {
+  width: 40%;
+  margin: 2em 0;
+}
+
+@media only screen and (max-width: 480px) {
+  .imgPortada {
+    display: none;
+  }
+
+  .seccionForm {
+    width: 100% !important;
+  }
+
+  .formIniciarSesion button,
+  .formIniciarSesion a {
+    width: 80% !important;
+  }
+
+  .seccionLogin a.linkSeccion {
+    margin: 0 !important;
+  }
+}
